@@ -491,7 +491,7 @@ html {
   }
 
 /* New Add Feature */
- .sec2__container {
+  .sec2__container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -524,27 +524,31 @@ html {
     color: #2c3e50;
   }
 
-  .educational-background {
-    list-style-type: square;
-    margin: 20px auto 0 auto;
-    padding-left: 20px;
-    text-align: left;
-  }
-
-  .educational-background li {
-    margin-bottom: 8px;
-    line-height: 1.5;
-  }
-
-  .educational-background li strong {
-    color: #2c3e50;
+  .educational-container {
+    margin-top: 30px;
   }
 
   .educational-header {
     text-align: center;
-    margin-top: 20px;
+    margin-bottom: 10px;
     color: #2c3e50;
     font-size: 1.8rem;
+  }
+
+  .educational-background {
+    list-style-type: square;
+    margin: 10px auto 0 auto;
+    padding-left: 20px;
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  .educational-background li {
+    margin-bottom: 8px;
+  }
+
+  .educational-background li strong {
+    color: #2c3e50;
   }
 
 .sec3{

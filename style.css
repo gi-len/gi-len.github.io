@@ -491,11 +491,38 @@ html {
   }
 
 /* New Add Feature */
-/*  .sec2__aboutme1, .sec2__aboutme2 {
+ .sec2__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .sec2__aboutme1, .sec2__aboutme2 {
     margin-bottom: 20px;
     max-width: 800px;
     width: 100%;
-  }*/
+  }
+
+  .sec2__aboutme1Social ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    gap: 15px;
+  }
+
+  .sec2__aboutme1Social a {
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+
+  .sec2__aboutme1Social a:hover {
+    color: #2c3e50;
+  }
 
   .educational-background {
     list-style-type: square;
@@ -511,6 +538,13 @@ html {
 
   .educational-background li strong {
     color: #2c3e50;
+  }
+
+  .educational-header {
+    text-align: center;
+    margin-top: 20px;
+    color: #2c3e50;
+    font-size: 1.8rem;
   }
 
 .sec3{

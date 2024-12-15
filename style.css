@@ -491,24 +491,50 @@ html {
   }
 
 /* New Add Feature */
+/* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the entire section */
 .sec2__container {
     display: flex;
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column; /* Stack the sections vertically */
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 20px;
 }
 
-/* Add some spacing between sections */
-.sec2__aboutme1, .sec2__aboutme2, .educational-container {
+/* General styling for all sections inside sec2__container */
+.sec2__aboutme1, .sec2__aboutme2, .educational-background-section {
     margin-bottom: 20px;
     width: 100%;
-    max-width: 800px; /* Limit the width to prevent stretching */
+    max-width: 800px; /* Limiting width */
 }
 
-/* Ensure the educational section fits the design */
-.educational-container {
+/* Styling for the About Me sections */
+.sec2__aboutme1 h2 {
+    color: #34495e;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.sec2__aboutme1 p {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+}
+
+.sec2__aboutme2 p {
+    color: #95a5a6;
+    font-size: 1rem;
+}
+
+/* Styling for the new Educational Background section */
+.educational-background-section {
     margin-top: 30px;
 }
 
@@ -521,7 +547,7 @@ html {
 
 .educational-background {
     list-style-type: square;
-    margin: 10px auto 0 auto;
+    margin: 10px auto;
     padding-left: 20px;
     text-align: left;
     line-height: 1.5;
@@ -533,6 +559,33 @@ html {
 
 .educational-background li strong {
     color: #2c3e50;
+}
+
+/* Additional Styling for About Me Section */
+.sec2__aboutme1, .sec2__aboutme2 {
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+}
+
+/* Responsive Design for Mobile View */
+@media (max-width: 768px) {
+    .sec2__container {
+        padding: 10px;
+    }
+
+    .sec2__aboutme1 h2, .sec2__aboutme2 p, .educational-header {
+        font-size: 1.5rem;
+    }
+
+    .sec2__aboutme1 p, .sec2__aboutme2 p, .educational-background {
+        font-size: 1rem;
+    }
+
+    .sec2__aboutme1, .sec2__aboutme2, .educational-background-section {
+        padding: 10px;
+        width: 100%;
+    }
 }
 
 .sec3{

@@ -520,119 +520,150 @@ h3 {
 }
 
 
-.sec3{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    align-items:center ;
-    text-align:center;
+/* Section 3: Team Project */
+.sec3 {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    text-align: center;
     margin: auto;
     background-color: white;
     position: relative;
     min-height: 100vh;
-    width: 45%;
+    width: 100%; /* Adjust width to be fully responsive */
     display: flex;
-    /*overflow: hidden;*/
     flex-direction: column;
     align-items: center;
     margin-top: 70px;
-    /*justify-content: space-evenly;*/
-    /*border-top: .2rem solid crimson;*/
-    /*border-bottom: .2rem solid crimson;*/
+    padding: 20px;
 }
 
-.sec3__heading {
-    overflow: hidden;
-}
-
-.sec3__heading h2 {
-    position: relative;
-    font-size: 5rem;
+#p1 {
+    font-size: 2.5rem; /* Adjusted for better scaling */
+    font-weight: 600;
     color: black;
-    text-transform: capitalize;
+    margin-top: 15px;
 }
 
-.sec3__heading h2:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: .2rem;
-    width: 100%;
-    background-color: rgb(241, 102, 102);
+#p2 {
+    font-size: 2rem;
+    text-align: left;
+    width: 100%; /* Ensure it adapts to the container */
+    margin-left: 20px;
 }
 
-#p1{
+#h {
+    width: 100%; /* Make it fully responsive */
     display: flex;
+    flex-wrap: nowrap; /* Allow horizontal scrolling if needed */
+    overflow-x: auto; /* Enable scrolling on smaller screens */
+    height: auto; /* Allow dynamic height adjustment */
+}
+
+#h1 {
+    display: flex; /* Flex layout for child elements */
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    flex: .5;
-    font-size:27px;
-    font-weight:600;
-    color: black;  
-    margin-top:15px;
+    flex-wrap: nowrap; /* Prevent wrapping by default */
+    gap: 10px; /* Add space between cards */
 }
 
-#p2{
-    font-size:30px;
-    text-align:left;
-    width:100%;
-    /*margin-top:15px;*/
-    margin-left:20px;
+#h2 {
+    flex: 0 0 auto; /* Prevent cards from shrinking or growing */
+    width: 300px; /* Set a responsive width for each card */
+    height: 250px;
+    background-color: #585858;
+    margin-left: 10px;
+    border-radius: 15px;
+    margin-right: 10px;
+    box-shadow: 7px 3px 8px 1px rgba(0, 0, 0, .3);
+    margin-top: 10px;
+    display: flex; /* Flexbox for inner content */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align content */
+    justify-content: center;
+    padding: 10px; /* Inner padding for better spacing */
 }
 
-#h{
-    /*overflow-x:scroll;*/
-    width: 55%;
-    display:block;
-    height:220px;
+#h2 img {
+    height: 80%; /* Adjusted to fit better within the card */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.2);
 }
-#h1{
-    display:block;
-    white-space:nowrap;
+
+#h3 {
+    font-size: 1rem; /* Responsive text size */
+    color: white;
+    font-family: 'Major Mono Display', monospace;
+    margin-top: 10px;
+    text-align: center;
 }
-#h2{
-    display:inline-block;
-    width:350px;
-    height:250px;
-    background-color:#585858;
-    margin-left:10px;
-    border-radius:15px;
-    margin-right:10px;
-    box-shadow:7px 3px 8px 1px rgba(0, 0, 0, .3);
-    margin-top:10px;
+
+#h4 {
+    text-decoration: none;
+    text-transform: none;
+    padding: 5px 10px;
+    color: grey;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
+    font-size: 0.9rem; /* Responsive font size */
+    margin-top: 10px;
 }
-#h2 img{
-    height:90%;
-    width:40%;
-    border-radius:2px;
-    position:relative ;
-    top:10px;
-    right:40px;
-    box-shadow:1px  1px 5px 1px rgba(255,255,255,0.2);
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    #h2 {
+        width: 250px; /* Shrink card width for smaller screens */
+        height: 200px; /* Shrink height as well */
+    }
+
+    #h2 img {
+        height: 70%;
+    }
+
+    #h3 {
+        font-size: 0.8rem;
+    }
+
+    #h4 {
+        font-size: 0.8rem;
+    }
 }
-#h3{
-    position:relative;
-    bottom:90px;
-    left:20px;
-    font-size:10px;
-    color:white;
-    font-family: 'Major Mono Display',
+
+@media screen and (max-width: 480px) {
+    #h2 {
+        width: 200px;
+        height: 180px;
+    }
+
+    #h2 img {
+        height: 60%;
+    }
+
+    #h3 {
+        font-size: 0.7rem;
+    }
+
+    #h4 {
+        font-size: 0.7rem;
+    }
 }
-#h4{
-    font-style:none;
-    text-decoration:none;
-    text-transform:none;
-    height:15px;
-    width:30px;
-    background-color:white;
-    border-radius:2px;
-    padding:5px;
-    color:grey;
-    position:relative;
-    right:80px;
-    bottom:50px;
-    box-shadow:2px  2px 5px 1px rgba(0,0,0,0.5);
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
 
 .sec3__project p{
     /* position: relative; */

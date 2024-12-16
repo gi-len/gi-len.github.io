@@ -680,6 +680,16 @@ footer p {
     font-size: 1.5rem;
 }
 
+/* Team Project Image Styling */
+.sec3__project img {
+  width: 100%; /* Makes it responsive */
+  max-width: 400px; /* Matches the style of the Home section image */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for better aesthetics */
+  display: block;
+  margin: 20px auto; /* Centers the image */
+}
 
 @media screen and (max-width: 600px) {
   p {

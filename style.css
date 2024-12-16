@@ -566,23 +566,6 @@ h3 {
     gap: 10px; /* Add space between cards */
 }
 
-#h2 {
-    flex: 0 0 auto; /* Prevent cards from shrinking or growing */
-    width: 300px; /* Set a responsive width for each card */
-    height: 250px;
-    background-color: #585858;
-    margin-left: 10px;
-    border-radius: 15px;
-    margin-right: 10px;
-    box-shadow: 7px 3px 8px 1px rgba(0, 0, 0, .3);
-    margin-top: 10px;
-    display: flex; /* Flexbox for inner content */
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center-align content */
-    justify-content: center;
-    padding: 10px; /* Inner padding for better spacing */
-}
-
 #h2 img {
     height: 80%; /* Adjusted to fit better within the card */
     width: auto; /* Maintain aspect ratio */

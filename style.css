@@ -611,6 +611,60 @@ h3 {
     margin-top: 10px;
 }
 
+/* Team Project Image Styling */
+.sec3__project img {
+  width: 100%; /* Makes it responsive */
+  max-width: 400px; /* Matches the style of the Home section image */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for better aesthetics */
+  display: block;
+  margin: 20px auto; /* Centers the image */
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 4vw;
+  }
+  .name1 {
+    margin-top: 20px;
+  }
+
+  .centered {
+    font-size: 8.5vw;
+  }
+
+  .recent {
+    font-size: 7.5vw;
+  }
+
+  .fab {
+    font-size: 6vw;
+    margin-bottom: 15px;
+  }
+}
+
+/* Team Project Heading Styling */
+.sec3__heading h2 {
+  font-size: 2.5rem; /* Matches the About Me font size */
+  font-weight: bold; /* Makes the text bold */
+  text-align: center; /* Centers the text */
+  color: #333; /* Matches the color used for About Me */
+  text-transform: uppercase; /* Optional: Makes the text uppercase */
+  margin-bottom: 20px; /* Adds spacing below the heading */
+  position: relative; /* Enables positioning for the underline effect */
+}
+
+/* Optional: Add an underline effect like in About Me */
+.sec3__heading h2::after {
+  content: "";
+  display: block;
+  width: 100px; /* Width of the underline */
+  height: 4px; /* Thickness of the underline */
+  background-color: #007bff; /* Matches the theme color */
+  margin: 10px auto 0; /* Centers the underline */
+}
+
 /* Responsive adjustments for smaller screens */
 @media screen and (max-width: 768px) {
     #h2 {
@@ -679,61 +733,6 @@ footer p {
 .sec3__project  p {
     font-size: 1.5rem;
 }
-
-/* Team Project Image Styling */
-.sec3__project img {
-  width: 100%; /* Makes it responsive */
-  max-width: 400px; /* Matches the style of the Home section image */
-  height: auto; /* Maintains aspect ratio */
-  border-radius: 10px; /* Optional: Adds rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for better aesthetics */
-  display: block;
-  margin: 20px auto; /* Centers the image */
-}
-
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 4vw;
-  }
-  .name1 {
-    margin-top: 20px;
-  }
-
-  .centered {
-    font-size: 8.5vw;
-  }
-
-  .recent {
-    font-size: 7.5vw;
-  }
-
-  .fab {
-    font-size: 6vw;
-    margin-bottom: 15px;
-  }
-}
-
-/* Team Project Heading Styling */
-.sec3__heading h2 {
-  font-size: 2.5rem; /* Matches the About Me font size */
-  font-weight: bold; /* Makes the text bold */
-  text-align: center; /* Centers the text */
-  color: #333; /* Matches the color used for About Me */
-  text-transform: uppercase; /* Optional: Makes the text uppercase */
-  margin-bottom: 20px; /* Adds spacing below the heading */
-  position: relative; /* Enables positioning for the underline effect */
-}
-
-/* Optional: Add an underline effect like in About Me */
-.sec3__heading h2::after {
-  content: "";
-  display: block;
-  width: 100px; /* Width of the underline */
-  height: 4px; /* Thickness of the underline */
-  background-color: #007bff; /* Matches the theme color */
-  margin: 10px auto 0; /* Centers the underline */
-}
-
 
 .sec4 {
     position: relative;
